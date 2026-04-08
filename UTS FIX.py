@@ -36,7 +36,7 @@ Game_Score = 0
 
 # ===== Constant Variable =====
 Gravity = 0.98
-MaxEnemy = 5
+MaxEnemy = 12
 Spawn_CD = 90
 
 # ===== Other Variables =====
@@ -476,7 +476,7 @@ while running:
     pygame.display.flip()
 
     # ===== Game Over Stuff =====
-    if Player.Health <= 0 or len(BadGuyInScreen) >= MaxEnemy::
+    if Player.Health <= 0 or len(BadGuyInScreen) >= MaxEnemy:
         print("Game Over")
         GameState = "GAMEOVER"
 
