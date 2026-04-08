@@ -310,12 +310,13 @@ while running:
         if event.type == pygame.QUIT:
             running = False
         
-        if event.type == pygame.KEYDOWN or event.type == pygame.MOUSEBUTTONDOWN:
-            if GameState == "MENU":
-                SetGame()
-                GameState = "RUNNING"
-            elif GameState == "GAMEOVER":
-                GameState = "MENU"
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_RETURN:
+                if GameState == "MENU":
+                    SetGame()
+                    GameState = "RUNNING"
+                elif GameState == "GAMEOVER":
+                    GameState = "MENU"
     
     # ===== Menu Handling =====
     if GameState == "MENU":
