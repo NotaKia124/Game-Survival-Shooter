@@ -323,7 +323,7 @@ while running:
         Screen.fill(White)
 
         title = font.render("SURVIVAL SHOOTER", True, Black)
-        start_text = font.render("Press any key to START", True, Black)
+        start_text = font.render("Press Enter to START", True, Black)
 
         Screen.blit(title, (ScreenWidth//2 - title.get_width()//2, 180))
         Screen.blit(start_text, (ScreenWidth//2 - start_text.get_width()//2, 240))
@@ -336,7 +336,7 @@ while running:
     
         over_text = font.render("GAME OVER", True, Red)
         score_text = font.render(f"Score: {Game_Score}", True, Black)
-        retry_text = font.render("Press any key to return MENU", True, Black)
+        retry_text = font.render("Press Enter to return MENU", True, Black)
     
         Screen.blit(over_text, (ScreenWidth//2 - over_text.get_width()//2, 180))
         Screen.blit(score_text, (ScreenWidth//2 - score_text.get_width()//2, 220))
