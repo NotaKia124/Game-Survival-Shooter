@@ -476,7 +476,7 @@ while running:
     pygame.display.flip()
 
     # ===== Game Over Stuff =====
-    if Player.Health <= 0:
+    if Player.Health <= 0 or len(BadGuyInScreen) >= MaxEnemy::
         print("Game Over")
         GameState = "GAMEOVER"
 
